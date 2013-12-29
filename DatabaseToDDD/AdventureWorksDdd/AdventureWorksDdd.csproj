@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3FFEC68-6E41-42D8-886C-A5FDFD6ABFA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdventureWorksDdd</RootNamespace>
+    <AssemblyName>AdventureWorksDdd</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\110\Shared\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichDomainModels.Generated\dbo.AWBuildVersion.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\dbo.DatabaseLog.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\dbo.ErrorLog.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\HumanResources.Department.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\HumanResources.Employee.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\HumanResources.EmployeeDepartmentHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\HumanResources.EmployeePayHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\HumanResources.JobCandidate.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\HumanResources.Shift.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.Address.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.AddressType.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.BusinessEntity.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.BusinessEntityAddress.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.BusinessEntityContact.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.ContactType.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.CountryRegion.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.EmailAddress.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.Password.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.Person.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.PersonPhone.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.PhoneNumberType.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Person.StateProvince.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.BillOfMaterials.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.Culture.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.Document.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.Illustration.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.Location.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.Product.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductCategory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductCostHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductDescription.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductDocument.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductInventory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductListPriceHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductModel.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductModelIllustration.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductModelProductDescriptionCulture.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductPhoto.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductProductPhoto.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductReview.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ProductSubcategory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.ScrapReason.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.TransactionHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.TransactionHistoryArchive.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.UnitMeasure.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.WorkOrder.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Production.WorkOrderRouting.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Purchasing.ProductVendor.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Purchasing.PurchaseOrderDetail.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Purchasing.PurchaseOrderHeader.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Purchasing.ShipMethod.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Purchasing.Vendor.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.CountryRegionCurrency.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.CreditCard.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.Currency.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.CurrencyRate.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.Customer.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.PersonCreditCard.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesOrderDetail.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesOrderHeader.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesOrderHeaderSalesReason.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesPerson.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesPersonQuotaHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesReason.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesTaxRate.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesTerritory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SalesTerritoryHistory.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.ShoppingCartItem.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SpecialOffer.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.SpecialOfferProduct.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\Sales.Store.cs">
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels.Generated\ZzekiGenerator.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZzekiGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RichDomainModels\Person.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RichDomainModels.Generated\ZzekiGenerator.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ZzekiGenerator.cs</LastGenOutput>
+    </None>
+    <None Include="RichDomainModels.Generated\ZzekiGenerator.ttinclude" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RichDomainModels.Generated\A\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

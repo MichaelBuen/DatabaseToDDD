@@ -1,0 +1,97 @@
+﻿<#@ template language="C#" hostspecific="True"#>
+<#@include file="ZzekiGenerator.ttinclude"#>
+
+<#@ assembly name="$(SolutionDir)ModelExtractor\bin\Debug\ModelExtractor.dll" #>
+<#@ import namespace="ModelExtractor"#>
+
+<#
+
+	var manager = Manager.Create(Host, GenerationEnvironment);
+
+	bool isGeneratePoor = false;
+
+	var entities = TheModelExtractor.GetTables();
+
+	var assocs = TheModelExtractor.GetEntityAssociation();
+#>
+
+
+<# 
+
+foreach(var e in entities) 
+{ 
+	manager.StartNewFile(string.Format("{0}.{1}.cs", e.TableSchema, e.TableName));
+#>
+namespace AdventureWorksDdd.RichDomainModels
+{	
+	public static partial class <#=e.TableSchema#>Schema
+	{
+		public partial class <#=e.TableName#>
+		{
+<#
+	if (isGeneratePoor) 
+	{		
+		foreach(var column in TheModelExtractor.GetColumns().Where(x => x.TableSchema == e.TableSchema && x.TableName == e.TableName))
+		{
+			// generate properties 
+			string propertyName = TheModelExtractor.NormalizePropertyName(column.ColumnName);
+
+			// If property name is same as class name, disambiguate
+			if (propertyName == e.TableName)
+				propertyName = "The" + propertyName;
+#>
+			public virtual <#=column.CSharpFullTypeAsString#> <#=propertyName#> { get; set; } <#=column.IsNullable ? "// Nullable" : ""#>
+<#
+		}
+	}
+	else
+	{
+
+		foreach(var column in TheModelExtractor.GetColumns().Where(x => x.TableSchema == e.TableSchema && x.TableName == e.TableName))
+		{
+			// generate properties
+			string propertyName = TheModelExtractor.NormalizePropertyName(column.ColumnName);
+
+			var assoc = assocs.SingleOrDefault(x => x.ForeignTableSchema == e.TableSchema && x.ForeignTableName == e.TableName && x.ForeignColumnName == column.ColumnName);
+			bool hasForeignKey = assoc != null;
+
+			bool isCompositeForeignKey = false;
+
+			if (hasForeignKey)
+			{
+				isCompositeForeignKey = assocs.Count(x => x.ForeignConstraintName == assoc.ForeignConstraintName) > 1;
+			}
+
+			string type = "";
+			if (!hasForeignKey)
+				type = column.CSharpFullTypeAsString;
+			else if (isCompositeForeignKey)
+				type = column.CSharpFullTypeAsString;
+			else
+			{
+				type = assoc.ReferencedTableSchema + "Schema." + assoc.ReferencedTableName;
+				propertyName = TheModelExtractor.NormalizeNavigationName(propertyName);
+			}
+
+			// If property name is same as class name, disambiguate
+			if (propertyName == e.TableName)
+				propertyName = "The" + propertyName;
+
+			// Let's use Domain-speak, let's use English-speak, let's say Optional instead of Nullable
+#>
+			public virtual <#=type#> <#=propertyName#> { get; set; } <#=column.IsNullable ? "// Optional" : ""#>
+<#
+		}
+	}
+#>
+		} // <#=e.TableName#>
+	}// <#=e.TableSchema#> Schema
+}	
+
+<#
+	manager.EndBlock(); 
+} 	
+#>
+
+
+<# manager.Process(true); #>
