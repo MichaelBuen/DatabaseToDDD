@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseToDDD
+namespace TestAdventureWorksDddManually
 {
     class Program
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
