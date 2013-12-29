@@ -10,7 +10,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal ShipRate { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ShipMethod
-	}// Purchasing Schema
-}	
-
+		}
+	} 
+} 

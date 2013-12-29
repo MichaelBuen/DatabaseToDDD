@@ -13,7 +13,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual short BOMLevel { get; set; } 
 			public virtual decimal PerAssemblyQty { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // BillOfMaterials
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

@@ -11,7 +11,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal AverageRate { get; set; } 
 			public virtual decimal EndOfDayRate { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // CurrencyRate
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

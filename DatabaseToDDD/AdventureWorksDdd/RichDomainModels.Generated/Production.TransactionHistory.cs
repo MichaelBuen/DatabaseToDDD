@@ -13,7 +13,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual int Quantity { get; set; } 
 			public virtual decimal ActualCost { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // TransactionHistory
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

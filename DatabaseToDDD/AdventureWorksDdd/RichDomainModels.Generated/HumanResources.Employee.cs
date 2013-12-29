@@ -20,7 +20,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual bool CurrentFlag { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Employee
-	}// HumanResources Schema
-}	
-
+		}
+	} 
+} 

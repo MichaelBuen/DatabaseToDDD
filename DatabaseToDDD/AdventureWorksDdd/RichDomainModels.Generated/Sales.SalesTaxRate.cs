@@ -11,7 +11,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string Name { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesTaxRate
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

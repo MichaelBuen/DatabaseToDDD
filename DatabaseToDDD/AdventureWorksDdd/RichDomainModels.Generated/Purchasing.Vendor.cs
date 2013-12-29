@@ -12,7 +12,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual bool ActiveFlag { get; set; } 
 			public virtual string PurchasingWebServiceURL { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Vendor
-	}// Purchasing Schema
-}	
-
+		}
+	} 
+} 

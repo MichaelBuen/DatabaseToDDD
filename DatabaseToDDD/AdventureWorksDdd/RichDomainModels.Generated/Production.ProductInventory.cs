@@ -11,7 +11,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual short Quantity { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ProductInventory
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

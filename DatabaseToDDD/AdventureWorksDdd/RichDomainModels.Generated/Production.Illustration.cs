@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual int IllustrationID { get; set; } 
 			public virtual System.Xml.Linq.XElement Diagram { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Illustration
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

@@ -16,7 +16,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal PlannedCost { get; set; } 
 			public virtual decimal? ActualCost { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // WorkOrderRouting
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

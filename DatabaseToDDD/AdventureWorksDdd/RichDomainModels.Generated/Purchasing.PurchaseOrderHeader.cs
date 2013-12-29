@@ -17,7 +17,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal Freight { get; set; } 
 			public virtual decimal TotalDue { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // PurchaseOrderHeader
-	}// Purchasing Schema
-}	
-
+		}
+	} 
+} 

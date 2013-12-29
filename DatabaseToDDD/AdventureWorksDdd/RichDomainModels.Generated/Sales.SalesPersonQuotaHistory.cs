@@ -9,7 +9,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal SalesQuota { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesPersonQuotaHistory
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

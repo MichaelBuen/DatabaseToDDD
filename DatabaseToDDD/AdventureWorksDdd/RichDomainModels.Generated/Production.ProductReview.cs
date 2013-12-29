@@ -12,7 +12,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual int Rating { get; set; } 
 			public virtual string Comments { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ProductReview
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

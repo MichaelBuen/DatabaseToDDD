@@ -9,7 +9,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal Rate { get; set; } 
 			public virtual byte PayFrequency { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // EmployeePayHistory
-	}// HumanResources Schema
-}	
-
+		}
+	} 
+} 

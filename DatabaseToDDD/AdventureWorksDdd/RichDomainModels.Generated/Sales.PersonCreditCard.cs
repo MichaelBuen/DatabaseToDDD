@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual PersonSchema.Person BusinessEntity { get; set; } 
 			public virtual SalesSchema.CreditCard CreditCard { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // PersonCreditCard
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

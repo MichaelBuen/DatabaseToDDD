@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string PhoneNumber { get; set; } 
 			public virtual PersonSchema.PhoneNumberType PhoneNumberType { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // PersonPhone
-	}// Person Schema
-}	
-
+		}
+	} 
+} 

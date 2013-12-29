@@ -13,7 +13,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual Microsoft.SqlServer.Types.SqlGeography SpatialLocation { get; set; } // Optional
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Address
-	}// Person Schema
-}	
-
+		}
+	} 
+} 

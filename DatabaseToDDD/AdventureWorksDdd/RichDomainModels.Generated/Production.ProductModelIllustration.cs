@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual ProductionSchema.ProductModel ProductModel { get; set; } 
 			public virtual ProductionSchema.Illustration Illustration { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ProductModelIllustration
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

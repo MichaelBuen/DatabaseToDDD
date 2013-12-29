@@ -13,7 +13,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal SalesLastYear { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesPerson
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

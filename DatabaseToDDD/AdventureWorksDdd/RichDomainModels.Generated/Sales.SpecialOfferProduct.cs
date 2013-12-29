@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual ProductionSchema.Product Product { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SpecialOfferProduct
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

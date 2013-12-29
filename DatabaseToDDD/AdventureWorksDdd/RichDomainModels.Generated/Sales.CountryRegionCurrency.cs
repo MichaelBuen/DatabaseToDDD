@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual PersonSchema.CountryRegion CountryRegion { get; set; } 
 			public virtual SalesSchema.Currency Currency { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // CountryRegionCurrency
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

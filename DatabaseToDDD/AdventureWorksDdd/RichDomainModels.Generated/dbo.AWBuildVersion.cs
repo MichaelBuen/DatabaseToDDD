@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string DatabaseVersion { get; set; } 
 			public virtual System.DateTime VersionDate { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // AWBuildVersion
-	}// dbo Schema
-}	
-
+		}
+	} 
+} 

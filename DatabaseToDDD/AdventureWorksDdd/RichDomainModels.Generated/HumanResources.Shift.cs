@@ -9,7 +9,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual System.DateTime StartTime { get; set; } 
 			public virtual System.DateTime EndTime { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Shift
-	}// HumanResources Schema
-}	
-
+		}
+	} 
+} 

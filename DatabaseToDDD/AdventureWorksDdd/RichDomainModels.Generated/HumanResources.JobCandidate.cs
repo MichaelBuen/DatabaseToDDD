@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual HumanResourcesSchema.Employee BusinessEntity { get; set; } // Optional
 			public virtual System.Xml.Linq.XElement Resume { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // JobCandidate
-	}// HumanResources Schema
-}	
-
+		}
+	} 
+} 

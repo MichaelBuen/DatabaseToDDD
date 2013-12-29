@@ -18,7 +18,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual byte[] TheDocument { get; set; } // Optional
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Document
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

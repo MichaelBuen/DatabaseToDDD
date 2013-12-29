@@ -29,7 +29,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual System.DateTime? DiscontinuedDate { get; set; } // Optional
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Product
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

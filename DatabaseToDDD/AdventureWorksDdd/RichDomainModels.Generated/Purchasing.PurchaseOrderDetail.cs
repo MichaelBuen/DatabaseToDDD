@@ -15,7 +15,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal RejectedQty { get; set; } 
 			public virtual decimal StockedQty { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // PurchaseOrderDetail
-	}// Purchasing Schema
-}	
-
+		}
+	} 
+} 

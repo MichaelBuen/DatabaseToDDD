@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual int ContactTypeID { get; set; } 
 			public virtual string Name { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ContactType
-	}// Person Schema
-}	
-
+		}
+	} 
+} 

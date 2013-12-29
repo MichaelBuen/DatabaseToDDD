@@ -14,7 +14,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal CostLastYear { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesTerritory
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

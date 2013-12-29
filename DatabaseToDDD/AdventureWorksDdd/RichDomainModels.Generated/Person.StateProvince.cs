@@ -12,7 +12,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual SalesSchema.SalesTerritory Territory { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // StateProvince
-	}// Person Schema
-}	
-
+		}
+	} 
+} 

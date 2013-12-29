@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual short ScrapReasonID { get; set; } 
 			public virtual string Name { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ScrapReason
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

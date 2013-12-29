@@ -10,7 +10,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual byte[] LargePhoto { get; set; } // Optional
 			public virtual string LargePhotoFileName { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ProductPhoto
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

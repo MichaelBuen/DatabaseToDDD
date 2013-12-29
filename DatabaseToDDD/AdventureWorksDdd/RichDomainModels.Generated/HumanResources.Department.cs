@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string Name { get; set; } 
 			public virtual string GroupName { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Department
-	}// HumanResources Schema
-}	
-
+		}
+	} 
+} 

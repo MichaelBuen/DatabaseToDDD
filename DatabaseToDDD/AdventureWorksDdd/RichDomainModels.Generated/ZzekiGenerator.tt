@@ -1,9 +1,7 @@
 ﻿<#@ template language="C#" hostspecific="True"#>
 <#@include file="ZzekiGenerator.ttinclude"#>
-
 <#@ assembly name="$(SolutionDir)ModelExtractor\bin\Debug\ModelExtractor.dll" #>
 <#@ import namespace="ModelExtractor"#>
-
 <#
 
 	var manager = Manager.Create(Host, GenerationEnvironment);
@@ -13,9 +11,11 @@
 	var entities = TheModelExtractor.GetTables();
 
 	var assocs = TheModelExtractor.GetEntityAssociation();
+
+
+	
+	 
 #>
-
-
 <# 
 
 foreach(var e in entities) 
@@ -81,17 +81,19 @@ namespace AdventureWorksDdd.RichDomainModels
 #>
 			public virtual <#=type#> <#=propertyName#> { get; set; } <#=column.IsNullable ? "// Optional" : ""#>
 <#
-		}
-	}
-#>
-		} // <#=e.TableName#>
-	}// <#=e.TableSchema#> Schema
-}	
-
+		} // loop Columns
+	} // rich DDD generator 
+#>		}
+	} 
+} 
 <#
 	manager.EndBlock(); 
-} 	
+
+}// foreach entities 	
+
+
+manager.Process(true); 
+
+goEnd:;
+
 #>
-
-
-<# manager.Process(true); #>

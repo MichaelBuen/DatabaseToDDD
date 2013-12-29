@@ -10,7 +10,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual byte ExpMonth { get; set; } 
 			public virtual short ExpYear { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // CreditCard
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

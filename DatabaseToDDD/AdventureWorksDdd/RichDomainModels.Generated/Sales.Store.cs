@@ -10,7 +10,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual System.Xml.Linq.XElement Demographics { get; set; } // Optional
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Store
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

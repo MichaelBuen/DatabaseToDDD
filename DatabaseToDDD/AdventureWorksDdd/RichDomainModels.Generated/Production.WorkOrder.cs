@@ -14,7 +14,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual System.DateTime DueDate { get; set; } 
 			public virtual ProductionSchema.ScrapReason ScrapReason { get; set; } // Optional
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // WorkOrder
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

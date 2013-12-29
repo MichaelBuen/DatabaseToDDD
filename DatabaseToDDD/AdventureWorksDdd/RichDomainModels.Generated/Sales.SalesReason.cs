@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string Name { get; set; } 
 			public virtual string ReasonType { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesReason
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

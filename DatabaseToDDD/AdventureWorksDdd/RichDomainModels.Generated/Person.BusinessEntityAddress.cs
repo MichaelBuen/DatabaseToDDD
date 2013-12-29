@@ -9,7 +9,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual PersonSchema.AddressType AddressType { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // BusinessEntityAddress
-	}// Person Schema
-}	
-
+		}
+	} 
+} 

@@ -15,7 +15,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual int? OnOrderQty { get; set; } // Optional
 			public virtual ProductionSchema.UnitMeasure UnitMeasure { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ProductVendor
-	}// Purchasing Schema
-}	
-
+		}
+	} 
+} 

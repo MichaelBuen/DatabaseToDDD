@@ -12,7 +12,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string Object { get; set; } // Optional
 			public virtual string TSQL { get; set; } 
 			public virtual System.Xml.Linq.XElement XmlEvent { get; set; } 
-		} // DatabaseLog
-	}// dbo Schema
-}	
-
+		}
+	} 
+} 

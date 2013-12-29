@@ -8,7 +8,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual ProductionSchema.ProductDescription ProductDescription { get; set; } 
 			public virtual ProductionSchema.Culture Culture { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // ProductModelProductDescriptionCulture
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

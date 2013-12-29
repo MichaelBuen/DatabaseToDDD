@@ -7,7 +7,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual SalesSchema.SalesOrderHeader SalesOrder { get; set; } 
 			public virtual SalesSchema.SalesReason SalesReason { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesOrderHeaderSalesReason
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

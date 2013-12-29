@@ -10,7 +10,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual System.DateTime? EndDate { get; set; } // Optional
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesTerritoryHistory
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 

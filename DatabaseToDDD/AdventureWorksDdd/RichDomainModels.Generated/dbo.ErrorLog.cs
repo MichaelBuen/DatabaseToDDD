@@ -13,7 +13,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual string ErrorProcedure { get; set; } // Optional
 			public virtual int? ErrorLine { get; set; } // Optional
 			public virtual string ErrorMessage { get; set; } 
-		} // ErrorLog
-	}// dbo Schema
-}	
-
+		}
+	} 
+} 

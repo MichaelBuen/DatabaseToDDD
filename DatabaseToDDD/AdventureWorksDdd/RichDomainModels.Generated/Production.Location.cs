@@ -9,7 +9,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal CostRate { get; set; } 
 			public virtual decimal Availability { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // Location
-	}// Production Schema
-}	
-
+		}
+	} 
+} 

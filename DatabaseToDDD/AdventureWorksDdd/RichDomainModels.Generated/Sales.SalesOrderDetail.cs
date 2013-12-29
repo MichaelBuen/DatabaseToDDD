@@ -15,7 +15,6 @@ namespace AdventureWorksDdd.RichDomainModels
 			public virtual decimal LineTotal { get; set; } 
 			public virtual System.Guid rowguid { get; set; } 
 			public virtual System.DateTime ModifiedDate { get; set; } 
-		} // SalesOrderDetail
-	}// Sales Schema
-}	
-
+		}
+	} 
+} 
